@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Open folders (doesn't track files yet)
+!*/
+
+# Re-ignore virtual environment and cache folders
+.venv/
+__pycache__/
+
+# Whitelist specific files
+!*.py
+!README.md
+!.gitignore
+!pyproject.toml
