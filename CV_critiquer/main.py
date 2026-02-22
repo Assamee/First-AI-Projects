@@ -66,12 +66,11 @@ if analyse and uploaded_file:
         client = OpenAI(api_key=OPENAI_API_KEY)
 
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-5.1",
             messages=[
                 {"role": "system", "content": 'You are an expert CV critic with a sharp eye for detail and a knack for providing concise, actionable feedback. Your critiques are direct, honest, and designed to help candidates improve their CVs to stand out in competitive job markets.'},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=1000,
             temperature=0.7
         )
 
